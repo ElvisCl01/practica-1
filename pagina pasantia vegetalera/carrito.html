@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarpiShop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="imagenes vegetalera/icon.ico">
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <aside>
+        
+           <header>
+                <h1 class="logo">VegetalesSRL</h1>
+            </header>
+            
+            <nav>
+                <ul>
+                    
+                    <li>
+                        <a class="boton-menu boton-volver" href="Untitled-1.html">
+                            <i class="bi bi-arrow-return-left"></i>Seguir Comprando
+                        </a>
+                    </li>  
+                    <li>
+                        <a class="boton-menu boton-carrito active" href="carrito.html">
+                            <i class="bi bi-cart-fill"></i>carrito
+                        </a>
+                    </li>
+
+                </ul>
+            </nav> 
+                    <footer>
+                        <p class="texto-footer">© 2023 Elvis Collado</p>
+                    </footer>
+        </aside>
+        
+        
+        <main>
+             <h2 class="titulo-principal">Carrito</h2>
+                    <div class="contenedor-carrito">
+                        <p class="carrito-vacio">Tu carrito esta vacio.<i class="bi bi-emoji-frown"></i></p>
+                            
+                        <div class="carrito-productos disabled">
+                               <!-- por si quiero duplicar -->
+                            <div class="carrito-producto">
+                                    <img class="carrito-producto-imagen" src="imagenes vegetalera/platano.jpg" alt="">
+                                    <div class="carrito-producto-titulo">
+                                        <small>Titulo</small>
+                                        <h3>Platano Verde</h3>
+                                    </div>
+                                    <div class="carrito-producto-cantidad">
+                                        <small>Cantidad</small>
+                                        <p>1</p>
+                                    </div>
+                                        <div class="carrito-producto-precio">
+                                            <small>Precio</small>
+                                            <p>$45</p>
+                                            </div>
+                                            <div class="carrito-producto-subtotal">
+                                                <small>Subtotal</small>
+                                                <p>$45</p>
+                                            </div>
+                                            <button class="carrito-producto-eliminar"><i class="bi bi-trash-fill"></i></button>
+                                        </div>
+                                   
+                                        <!-- por si quiero duplicar -->
+                                        <div class="carrito-producto">
+                                            <img class="carrito-producto-imagen" src="imagenes vegetalera/yuca.jpg" alt="">
+                                            <div class="carrito-producto-titulo">
+                                                <small>Titulo</small>
+                                                <h3>Yuca</h3>
+                                            </div>
+                                            <div class="carrito-producto-cantidad">
+                                                <small>Cantidad</small>
+                                                <p>1</p>
+                                            </div>
+                                                <div class="carrito-producto-precio">
+                                                    <small>Precio</small>
+                                                    <p>$45</p>
+                                                    </div>
+                                                    <div class="carrito-producto-subtotal">
+                                                        <small>Subtotal</small>
+                                                        <p>$45</p>
+                                                    </div>
+                                                    <button class="carrito-producto-eliminar"><i class="bi bi-trash-fill"></i></button>
+                                                </div>
+                                </div>
+
+                                <div class="carrito-acciones disabled">
+                                    <div class="carrito-acciones-izquierda">
+                                        <button class="carrito-acciones-vaciar">Vaciar carrito</button>
+                                    </div>
+                                    
+                                    <div class="carrito-acciones-derecha">
+                                        <div class="carrito-acciones-total">
+                                        <p>Total:</p>
+                                        <p id="total">$90</p>
+                                    </div>
+                                    <button class="carrito-acciones-comprar">Comprar Ahora</button>
+                                </div>
+                            </div>
+                            <p class="carrito-comprado disabled">Muchas gracias por tu compra.<i class="bi bi-emoji-laughing"></i></p>
+                        </div>
+
+                    
+        </main>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>

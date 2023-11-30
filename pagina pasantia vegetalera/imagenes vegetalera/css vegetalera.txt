@@ -1,0 +1,126 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #161717;
+    color: #000000;
+}
+
+.inicio {
+    background-color: #4CAF50;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.producto, .oferta {
+    flex: 0 0 calc(18% - 10px);
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+    margin-bottom: 20px;
+    border-radius: 8px; /* Añade esquinas redondeadas */
+    text-align:center;
+}
+
+.producto:hover, .oferta:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.producto img, .oferta img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.producto h3, .oferta h3 {
+    margin-top: 0;
+}
+
+.precio, .precio-oferta {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.contacto {
+    text-align: center;
+    padding: 20px;
+    background-color: #aaaaaa;
+    color: rgb(11, 11, 11);
+   
+}
+
+.lema {
+    font-style: italic;
+}
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #306f33;
+}
+
+/* Estilos para la sección de Ofertas Especiales y Paquetes Especiales */
+.ofertas,
+.paquetes {
+    display: flex;
+    flex-direction: column; /* Cambia la dirección de la flexión para que sea una columna */
+    padding: 60px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para cada oferta y paquete */
+.oferta,
+.paquete {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Estilos específicos para las ofertas y paquetes (puedes personalizar según tus necesidades) */
+.oferta img,
+.paquete img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para resaltar al pasar el ratón sobre cada oferta y paquete */
+.oferta:hover,
+.paquete:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
